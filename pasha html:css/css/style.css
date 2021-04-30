@@ -1,8 +1,10 @@
 h1 {
     font-size: 32px;
+    font-weight: 500;
 }
 h2 {
     font-size: 24px;
+    font-style: italic;
 }
 p  { 
     font-size: 14px;
@@ -12,4 +14,19 @@ p  {
 }
 ul {
     list-style: decimal;
+}
+
+.clblue {
+    color: blue;
+}
+.clteg {
+    color: #c2802b;
+}
+
+.quality {
+    color: #49acd6;
+}
+
+.sense {
+    color: #e0e86d;
 }

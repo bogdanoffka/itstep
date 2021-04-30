@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Введение в CSS</title>
 </head>
 <body>
@@ -35,25 +35,25 @@
     <ul>
         <li>
     <p>
-         когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством тега <b>&lt;link&gt;</b>, 
-    располагающегося в этом документе между тегами <span class="clgreen"><b>&lt;head&gt;</b></span> и <b>&lt;head&gt;</b>.
+         когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством тега <span class="clgreen"><b>&lt;link&gt;</b></span>, 
+    располагающегося в этом документе между тегами <span class="clgreen"><b>&lt;head&gt;</b></span> и <span class="clgreen"><b>&lt;head&gt;</b></span>.
     </p> 
-    <p>(Тег <b>&lt;link&gt;</b> будет иметь атрибут href, имеющий значением адрес этой таблицы стилей).
+    <p>(Тег <span class="clgreen"><b>&lt;link&gt;</b></span> будет иметь атрибут <span class="clblue">href</span>, имеющий значением адрес этой таблицы стилей).
      Все правила этой таблицы действуют на протяжении всего документа;</p>
          </li>
          <li>
     <p> 
          когда таблица стилей находится в отдельном файле, она может быть подключена к веб-документу посредством директивы @import,
-     располагающейся в этом документе между тегами <b>&lt;style&gt;</b> и <b>&lt;/style&gt;</b> 
-     (которые, в свою очередь, располагаются в этом документе между тегами <b>&lt;head&gt;</b> и <b>&lt;/head&gt;</b>) 
-     сразу после тега <b>&lt;style&gt;</b>, которая также указывает (в своих скобках, после слова url) на адрес этой таблицы стилей. 
+     располагающейся в этом документе между тегами <span class="clgreen"><b>&lt;style&gt;</b></span> и <span class="clgreen"><b>&lt;/style&gt;</b></span>
+     (которые, в свою очередь, располагаются в этом документе между тегами <span class="clgreen"><b>&lt;head&gt;</b></span> и <span class="clgreen"><b>&lt;/head&gt;</b></span>) 
+     сразу после тега <span class="clgreen"><b>&lt;style&gt;</b></span>, которая также указывает (в своих скобках, после слова url) на адрес этой таблицы стилей. 
      Все правила этой таблицы действуют на протяжении всего документа;
     </p>
          </li>
 
          <li>
-     <p> когда таблица стилей описана в самом документе, она может располагаться в нём между тегами &lt;style&gt; и &lt;/style&gt; 
-    (которые, в свою очередь, располагаются в этом документе между тегами <b>&lt;head&gt;</b> и <b>&lt;/head&lt;</b>). 
+     <p> когда таблица стилей описана в самом документе, она может располагаться в нём между тегами <span class="clgreen"> &lt;/style&gt;</span> 
+    (которые, в свою очередь, располагаются в этом документе между тегами <span class="clgreen"><b>&lt;head&gt;</b></span> и <span class="clgreen"><b>&lt;/head&lt;</b></span>). 
     Все правила этой таблицы действуют на протяжении всего документа;</p>
          </li>
 
@@ -78,26 +78,26 @@
     
         <h2 id="menu3">Пример таблицы стилей</h2>
     
-   <p>Пример таблицы стилей (в таком виде она может быть либо размещена в отдельном файле .css либо же обрамлена тегами <b>&lt;style&gt;</b> 
+   <p>Пример таблицы стилей (в таком виде она может быть либо размещена в отдельном файле .css либо же обрамлена тегами <span class="clgreen"><b>&lt;style&gt;</b></span> 
     и размещена в «шапке» той самой веб-страницы, на которую она действует):</p>
     
 <pre>
-   p {
-   font-family: arial, helvetica, sans-serif; 
-}
-h2 {
-   font-size: 20pt; 
-   color: red; 
-   background: white; 
-}
-.note {
-   color: red; 
-   background-color: yellow; 
-   font-weight: bold; 
-}
-p#paragraph1 {
-   padding-left: 10px;
-}
+   <span class="clteg">p</span> {
+   <span class="quality">font-family</span>: <span class="sense">arial</span>,<span class="sense">helvetica</span>,<span class="sense">sans-serif</span>; 
+    }
+   <span class="clteg">h2</span> {
+   <span class="quality">font-size</span>: <span class="sense">20pt</span>; 
+   <span class="quality">color</span>: <span class="sense">red</span>; 
+   <span class="quality">background</span>: <span class="sense">white</span>; 
+    }
+   <span class="clteg">.note</span> {
+   <span class="quality">color</span>: <span class="sense">red</span>; 
+   <span class="quality">background-color</span>: <span class="sense">yellow</span>; 
+   <span class="quality">font-weight</span>: <span class="sense">bold</span>; 
+    }
+   <span class="clteg">p#paragraph1</span> {
+   <span class="quality">padding-left</span>: <span class="sense">10px</span>;
+    }
 </pre>
 <p>
     За дополнительной информацией переходите на сайт википедии.Нажмите сюда: 
