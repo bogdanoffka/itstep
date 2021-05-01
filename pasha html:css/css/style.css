@@ -1,10 +1,12 @@
 h1 {
     font-size: 32px;
     font-weight: 500;
+    background-color: rgb(238, 202, 148);
 }
 h2 {
     font-size: 24px;
     font-style: italic;
+    background-color: rgb(238, 202, 148);
 }
 p  { 
     font-size: 14px;
@@ -28,5 +30,56 @@ ul {
 }
 
 .sense {
-    color: #e0e86d;
+    color: #ccd36f;
+}
+
+ .link {
+    background-color: burlywood;
+}
+
+a .link:hover {
+    color: chocolate;
+}
+
+.heading {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(243, 242, 186);
+}
+
+tr > td {
+    text-align: center;
+}
+
+table[border] {
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 15px;
+    border-width: 10px;
+    border-collapse: collapse;
+}
+
+.main {
+    border-top: 1px solid #8c8c8c;
+}
+
+.str {
+    border-top: 1px solid #8c8c8c;
+    transition: .5s;
+}
+
+th {
+    font-weight: 300;
+    padding: 5px 35px;
+    color: #8c8c8c;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.str:hover {
+    background-color: #c7af6e;
+    color: #fff;
+    
 }

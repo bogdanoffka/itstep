@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Введение в CSS</title>
 </head>
 <body>
-      <h1>Основы CSS</h1>
-      <ul>
-          <li><a href="#menu1">Способы подключения CSS к документу</a></li>
-          <li><a href="#menu2">Правила построения CSS</a></li>
-          <li><a href="#menu3">Пример таблицы стилей</a></li>
-      </ul>
+    <!--Заголовок 1-го уровня с нумерованным списком (каждый пункт якорь-ссылка)--> 
+      <span class="heading"><h1>Основы CSS</h1></span>
+      <ol>
+          <li><a href="#menu1" title="Правила CSS пишутся на формальном...">Способы подключения CSS к документу</a></li>
+          <li><a href="#menu2" title="В первых трёх случаях...">Правила построения CSS</a></li>
+          <li><a href="#menu3" title="в таком виде она может быть...">Пример таблицы стилей</a></li>
+      </ol>
       
    
     <p>
-       <strong>CSS</strong> ( англ. <em>Cascading Style Sheets</em> — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, 
+       <strong><em>CSS</em></strong> ( англ. <em>Cascading Style Sheets</em> — каскадные таблицы стилей) — формальный язык описания внешнего вида документа, 
     написанного с использованием языка разметки.
     Преимущественно используется как средство описания, оформления внешнего вида веб-страниц, 
     написанных с помощью языков разметки HTML и XHTML, но может также применяться к любым XML-документам, 
     например, к SVG или XUL.
     </p>
-    
+    <!--Заголовок 2-го уровня с описанием и маркированным списком-->
     <p>
         <h2 id="menu1">Способы подключения CSS к документу</h2>
     </p>
@@ -64,6 +65,8 @@
          </li>
     
     </ul>
+
+    <!--Заголовок 2-го уровня с текстом-->
     <p>
         <h2 id="menu2">Правила построения CSS</h2>
     </p>
@@ -76,36 +79,71 @@
     </p> 
     <p>В таком случае свойство применяется к каждому из них.</p>
     
+    <!--Заголовок 2-го уровня с примером офомрленным селекторами из CSS-->
         <h2 id="menu3">Пример таблицы стилей</h2>
     
    <p>Пример таблицы стилей (в таком виде она может быть либо размещена в отдельном файле .css либо же обрамлена тегами <span class="clgreen"><b>&lt;style&gt;</b></span> 
     и размещена в «шапке» той самой веб-страницы, на которую она действует):</p>
     
-<pre>
-   <span class="clteg">p</span> {
-   <span class="quality">font-family</span>: <span class="sense">arial</span>,<span class="sense">helvetica</span>,<span class="sense">sans-serif</span>; 
-    }
-   <span class="clteg">h2</span> {
-   <span class="quality">font-size</span>: <span class="sense">20pt</span>; 
-   <span class="quality">color</span>: <span class="sense">red</span>; 
-   <span class="quality">background</span>: <span class="sense">white</span>; 
-    }
-   <span class="clteg">.note</span> {
-   <span class="quality">color</span>: <span class="sense">red</span>; 
-   <span class="quality">background-color</span>: <span class="sense">yellow</span>; 
-   <span class="quality">font-weight</span>: <span class="sense">bold</span>; 
-    }
-   <span class="clteg">p#paragraph1</span> {
-   <span class="quality">padding-left</span>: <span class="sense">10px</span>;
-    }
-</pre>
+  <pre>
+    <span class="clteg">p</span> {
+    <span class="quality">font-family</span>: <span class="sense">arial</span>,<span class="sense">helvetica</span>,<span class="sense">sans-serif</span>; 
+     }
+    <span class="clteg">h2</span> {
+    <span class="quality">font-size</span>: <span class="sense">20pt</span>; 
+    <span class="quality">color</span>: <span class="sense">red</span>; 
+    <span class="quality">background</span>: <span class="sense">white</span>; 
+     }
+    <span class="clteg">.note</span> {
+    <span class="quality">color</span>: <span class="sense">red</span>; 
+    <span class="quality">background-color</span>: <span class="sense">yellow</span>; 
+    <span class="quality">font-weight</span>: <span class="sense">bold</span>; 
+     }
+    <span class="clteg">p#paragraph1</span> {
+    <span class="quality">padding-left</span>: <span class="sense">10px</span>;
+     }
+  </pre>
+
+<!--Ссылка на стороннюю страницу с аттрибутом,открывабщим ее в новой вкладке target="blank"-->
 <p>
     За дополнительной информацией переходите на сайт википедии.Нажмите сюда: 
-    <a href="https://ru.wikipedia.org/wiki/CSS">wikipedia.com</a>
+    <a href="https://ru.wikipedia.org/wiki/CSS" target="_blank"><span class="link"><b>wikipedia.com</b></span></a>
 </p>
 
-</ul>
-
-    
+<!--Таблица на 2 ячейки в 4 ряда с селекторами в левой колонке и их пояснениями в правой. -->
+<table border="2" width="800" height="300" align="center">
+    <tr class="main">
+        <th>selector</th>
+        <th>meaning</th>
+    </tr>
+    <tr class="str">
+        <td>p { <br>
+            font-family: arial, helvetica, sans-serif; 
+         <br>}</td>
+        <td>Применить к данному параграфу стиль текста ариал без заковырок.Есои нет,то стиль текста хельветика.</td>
+    </tr>
+    <tr class="str">
+        <td>h2 {<br>
+            font-size: 20pt; 
+            color: red; 
+            background: white; 
+         <br>}</td>
+        <td>Применить к заголовку 2-го уровня размер текста,цвет,фон.</td>
+    </tr>
+    <tr class="str">
+        <td>.note <br>{
+            color: red; 
+            background-color: yellow; 
+            font-weight: bold; 
+         <br>}</td>
+        <td>Применить к классу цвет,фон,жирность шрифта.</td>
+    </tr>
+    <tr class="str">
+        <td>p#paragraph1 <br>{
+            padding-left: 10px;
+        <br>}</td>
+        <td>Применить к идентивикатору внутренний отступ слева.</td>
+    </tr>
+</table>    
 </body>
 </html>
