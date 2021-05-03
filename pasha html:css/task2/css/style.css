@@ -1,0 +1,34 @@
+p {
+ font-size: 30px;
+ color: #808080;
+ letter-spacing: 5px;
+ word-spacing: 24px;
+}
+
+ins + span {
+    text-decoration: overline;
+}
+
+.simple {
+    font-weight: 900;
+}
+
+del ins {
+    text-shadow: 1px 1px 2px orange;
+}
+
+.simple del ins {
+    font-size: 35px;
+}
+
+.na2 {
+    color: rgba(244, 39, 237, 0.5);
+}
+
+.square {
+    opacity: 0;
+}
+
+.square:hover {
+    opacity: 1;
+}
