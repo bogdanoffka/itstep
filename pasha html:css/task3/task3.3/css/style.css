@@ -1,0 +1,18 @@
+table {
+    width: 55%;
+    height: 55%;
+    margin-left: 20%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    width: 10%;
+}
+
+caption {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}

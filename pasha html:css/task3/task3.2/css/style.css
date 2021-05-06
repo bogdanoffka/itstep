@@ -1,0 +1,36 @@
+caption {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+table {
+    width: 800px;
+    height: 350px;
+    margin-left: 15%;
+    background-color: rgb(193, 224, 235);
+    border: 30px solid white;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid white;
+}
+
+th {
+    background-color: rgb(15, 118, 158);
+    border: 3px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: white;
+}
+
+tr:nth-child(2n+2) {
+    background-color: rgb(134, 172, 204);
+}
+
+th,td:nth-child(2) {
+    text-align: left;
+}

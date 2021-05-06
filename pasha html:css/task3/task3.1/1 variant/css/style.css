@@ -1,0 +1,44 @@
+table {
+    margin-top: 5%;
+    margin-left: 10%;
+    background-color: rgba(163, 41, 41, 0.9);
+    border-collapse:collapse;
+    width: 80%;
+    border: 5px solid #000;
+    border-spacing: 5px 50px;
+}
+
+td {
+    padding: 5px;
+    border: 5px solid #000;
+    border-spacing: 10px 50px;
+    color:#ffffff;
+    font-size: 30px;
+}
+
+.rowleft {
+    text-align: left;
+}
+
+.rowcenter {
+    text-align: center;
+}
+
+.rowright {
+    text-align: right;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+caption{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}

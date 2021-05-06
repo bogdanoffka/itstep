@@ -1,0 +1,81 @@
+caption {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+table {
+    margin-left: 20%;
+    margin-top: 5%;
+    border-radius: 2%;
+    width: 900px;
+    height: 600px;
+    border-collapse: collapse;
+    border: 2px solid grey;
+}
+
+th {
+    text-align: right;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+td {
+    border: 2px solid grey;
+    text-align: right;
+    vertical-align: top;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.birthday {
+    background-image: url(../img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.holiday {
+    background-image: url(../img/IMG_4141.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.work {
+    background-image: url(../img/4img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+}
+
+td {
+    width: 100px;
+}
+
+td:nth-child(6) {
+    background-color: rgb(255, 19, 19);
+    color: white;
+}
+
+td:nth-child(7) {
+    background-color: rgb(255, 19, 19);
+    color: white;
+}
+
+tr:nth-child(7) {
+    background-color:rgb(201, 198, 198);
+}
+
+tr:nth-child(2) {
+    background-color:rgb(201, 198, 198);
+}
+
+
+
+
+
+
+

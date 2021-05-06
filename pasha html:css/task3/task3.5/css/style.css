@@ -1,0 +1,22 @@
+caption {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+table {
+    margin-left: 20%;
+    margin-top: 5%;
+    width: 700px;
+    height: 450px;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.bottom {
+    border-bottom: 2px solid white;
+}
