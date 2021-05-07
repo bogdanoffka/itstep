@@ -1,14 +1,14 @@
 table {
-    width: 55%;
-    height: 55%;
     margin-left: 20%;
+    border-spacing: 0;
     border-collapse: collapse;
     border: 1px solid black;
 }
 
 td {
     border: 1px solid black;
-    width: 10%;
+    width: 100px;
+    height: 100px;
 }
 
 caption {
